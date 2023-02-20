@@ -1,0 +1,49 @@
+.purple {
+  color: #3c0080ed;
+}
+
+.purple-bg {
+  background-color: #3c0080ed;
+}
+
+.blue {
+  color: #02b1c4;
+}
+
+.blue-bg {
+  background-color: #02b1c4;
+}
+
+.orange {
+  color: #c45d02;
+}
+
+.orange-bg {
+  background-color: #c45d02;
+}
+
+.white {
+  color: white;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+footer {
+  background-color: #3c0080ed;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#navDemo {
+  background-color: white;
+  color: #02b1c4;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  margin: 20px;
+}
