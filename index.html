@@ -31,7 +31,7 @@ body {font-family: "Roboto", sans-serif}
     <a href="#info" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INFOS</a>
     <a href="#jeux" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LES JEUX</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a href="https://bit.ly/3kDVPNI" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INSCRIPTIONS</a>
+    <a href="#inscription" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INSCRIPTIONS</a>
     <a href="#ylocation" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COMMENT Y ACCEDER ?</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
@@ -50,7 +50,7 @@ body {font-family: "Roboto", sans-serif}
   <a href="#info" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INFOS</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
   <a href="#jeux" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LES JEUX</a>
-  <a href="https://bit.ly/3kDVPNI" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INSCRIPTIONS</a>
+  <a href="#inscription" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INSCRIPTIONS</a>
   <a href="#ylocation" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COMMENT Y ACCEDER ?</a>
 </div>
 
@@ -97,7 +97,22 @@ body {font-family: "Roboto", sans-serif}
   <div class="purple-bg" id="jeux">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center white">Les jeux</h2>
-      <p class="w3-opacity w3-center white"><i>Remember to book your tickets!</i></p><br>
+
+      
+      <p class="w3-opacity w3-center white"><i>Voici les jeux de cette édition !</i></p><br>
+
+      <div>
+        <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_184x69.jpg" alt="CS:GO" height="69" width="184" class="w3-center">
+        </a>
+        <a href="https://www.rocketleague.com/" target="_blank">
+          <img src="https://logos-world.net/wp-content/uploads/2020/11/Rocket-League-Logo.png" alt="Rocket League" height="69" width="184" class="w3-center">
+        </a>
+        <a href="https://na.leagueoflegends.com/en-us/" target="_blank">
+          <img src="https://logos-world.net/wp-content/uploads/2020/11/League-of-Legends-Logo.png" alt="League of Legends" height="69" width="184" class="w3-center">
+        </a>
+      </div>
+      
       <script src="js/csgo.js"></script>
     
     </div>
@@ -107,7 +122,7 @@ body {font-family: "Roboto", sans-serif}
   <div class="blue-bg" id="contact">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center white">Contact</h2>
-
+      
 
       <form class="contact-form" action="mailto:a.lemaire@pole-formation.net?subject=[EPSI LAN CONTACT]" method="post" enctype="text/plain" accept-charset="UTF-8">
         <label class="form-label" for="nom">Nom :</label>
@@ -128,24 +143,13 @@ body {font-family: "Roboto", sans-serif}
     
     </div>
   </div>
-
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
+  
+  <!-- Section contact forms -->
+  <div class="purple-bg" id="inscription">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center white">Inscription</h2>
+      <iframe class="w3-center" src="https://docs.google.com/forms/d/e/1FAIpQLSd6IHyVfzhbAMO04Pn-k3Vsa2F94pB93td-TsCibdaMZZkKuw/viewform?embedded=true" width="640" height="1726" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+  
     </div>
   </div>
 
@@ -154,9 +158,9 @@ body {font-family: "Roboto", sans-serif}
     <h2 class="w3-wide w3-center">Comment y acceder ?</h2>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Pole Formation 58-89, 6 rte Monéteau, 89000 Auxerre<br>
+        <i class="fa fa-phone" style="width:30px"></i> Télephone : 03 86 49 26 07<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email : a.lemaire@pole-formation.net<br>
       </div>
       <div class="w3-col m6">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2678.92391291864!2d3.582699715876949!3d47.821691981087405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee4f74753c237f%3A0xa6cfa67fb5102a1!2sP%C3%B4le%20Formation%2058-89%20Auxerre%20%2F%20Maison%20de%20l&#39;Entreprise!5e0!3m2!1sfr!2sfr!4v1677941816254!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -167,8 +171,6 @@ body {font-family: "Roboto", sans-serif}
 <!-- End Page Content -->
 </div>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge">
@@ -178,7 +180,6 @@ body {font-family: "Roboto", sans-serif}
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 <script>
