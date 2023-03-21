@@ -30,12 +30,13 @@ body {font-family: "Roboto", sans-serif}
     <a href="#" class="w3-bar-item w3-button w3-padding-large">ACCUEIL</a>
     <a href="#info" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INFOS</a>
     <a href="#jeux" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LES JEUX</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RÈGLES</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INSCRIPTIONS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="https://bit.ly/3kDVPNI" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INSCRIPTIONS</a>
     <a href="#ylocation" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COMMENT Y ACCEDER ?</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#rules" class="w3-bar-item w3-button">Règles</a>
         <a href="#" class="w3-bar-item w3-button">Merchandise</a>
         <a href="#" class="w3-bar-item w3-button">Extras</a>
         <a href="#" class="w3-bar-item w3-button">Media</a>
@@ -46,9 +47,10 @@ body {font-family: "Roboto", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#info" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RÈGLES</a>
+  <a href="#info" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INFOS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
   <a href="#jeux" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LES JEUX</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INSCRIPTIONS</a>
+  <a href="https://bit.ly/3kDVPNI" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INSCRIPTIONS</a>
   <a href="#ylocation" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COMMENT Y ACCEDER ?</a>
 </div>
 
@@ -97,6 +99,32 @@ body {font-family: "Roboto", sans-serif}
       <h2 class="w3-wide w3-center white">Les jeux</h2>
       <p class="w3-opacity w3-center white"><i>Remember to book your tickets!</i></p><br>
       <script src="js/csgo.js"></script>
+    
+    </div>
+  </div>
+
+  <!-- Section contact forms -->
+  <div class="blue-bg" id="contact">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center white">Contact</h2>
+
+
+      <form class="contact-form" action="mailto:a.lemaire@pole-formation.net?subject=[EPSI LAN CONTACT]" method="post" enctype="text/plain" accept-charset="UTF-8">
+        <label class="form-label" for="nom">Nom:</label>
+        <input class="form-input" type="text" id="nom" name="nom" required><br>
+
+        <label class="form-label" for="email">E-mail:</label>
+        <input class="form-input" type="email" id="email" name="email" required><br>
+
+        <label class="form-label" for="sujet">Sujet:</label>
+        <input class="form-input" type="text" id="sujet" name="sujet" required><br>
+
+        <label class="form-label" for="message">Message:</label>
+        <textarea class="form-input" id="message" name="message" rows="5" cols="30" required></textarea><br>
+
+        <input class="form-button" type="submit" value="Envoyer">
+        <input class="form-button" type="reset" value="Effacer">
+      </form>
     
     </div>
   </div>
