@@ -74,6 +74,17 @@ img {
   transition: background-color 0.3s ease;
 }
 
+.discord-button {
+  background-color: #7289DA;
+  border: none;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .form-button:hover {
   background-color: #3c0080ed;
 }
