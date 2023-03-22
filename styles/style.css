@@ -85,6 +85,18 @@ img {
   transition: background-color 0.3s ease;
 }
 
+.rules-button {
+  background-color: #5bc561;
+  border: none;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  color: white;
+  padding: 10px 20px;
+  margin: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
 .form-button:hover {
   background-color: #3c0080ed;
 }
