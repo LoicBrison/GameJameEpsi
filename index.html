@@ -21,8 +21,8 @@ body {font-family: "Roboto", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<script src="js/three.js"></script>
 </head>
+<body>
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-card blue white-bg">
@@ -47,39 +47,37 @@ body {font-family: "Roboto", sans-serif}
   <a href="#rules" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RÈGLES</a>
 
 </div>
-
 <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+      <div class="w3-content" style="max-width:2000px;margin-top:46px">
+      
+        <!-- Automatic Slideshow Images -->
+        <div class="mySlides w3-display-container w3-center white">
+          <img src="source\img\logoEpsiFondBlanc.svg" style="height:100%">
+          <img src="source\img\epsi-game-logo.png" style="width:10%">
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="source\img\logoEpsiFondBlanc.svg" style="height:100%">
-    <img src="source\img\epsi-game-logo.png" style="width:10%">
-    
-    <div class=" w3-container w3-padding-32 w3-hide-small">
-      <h1>EPSI <b class="orange">Games</b></h1>
-  
-    </div>
-  </div>
-
-  <!-- The Info Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="info">
-    <h2 class="w3-wide">Info</h2>
-    <p class="w3-opacity"><i>Tournoi de jeux vidéos</i></p>
-    <p class="w3-justify">Bienvenue sur le site de l'EPSI GAMES, le tournoi de jeux vidéo organisé par l'EPSI Auxerre ! 
-      Le tournoi a lieu le 22 avril 2023 au Pôle-Formation 58/89, 6 Route de Monéteau à Auxerre. 
-      Venez participer en équipe de 3 ou de 5 sur des jeux comme League of Legends, Rocket League ou encore Counter-Strike : Global Offensive,
-      et tenter de gagner des lots pour les finalistes !
-      La finale sera sur scène, dans l'amphithéatre du campus d'Auxerre, et retransmise sur Twitch sur la chaine de l'EPSI. 
-      Inscrivez-vous sur le formulaire ci-dessous, et rejoignez le serveur Discord pour toutes infos complémentaires !</p>
-
-      <button class="discord-button w3-center" onclick="window.location.href = 'https://discord.gg/P6y9shZbSv';">Discord</button>
-
-  </div>
-
+          <div class=" w3-container w3-padding-32 w3-hide-small">
+            <h1>EPSI <b class="orange">Games</b></h1>
+          
+          </div>
+        </div>
+        <!-- The Info Section -->
+        <div class="w3-container w3-content w3-center w3-padding-64  white" style="max-width:800px" id="info">
+          <h2 class="w3-wide">Info</h2>
+          <p class="w3-opacity"><i>Tournoi de jeux vidéos</i></p>
+          <p class="w3-justify">Bienvenue sur le site de l'EPSI GAMES, le tournoi de jeux vidéo organisé par l'EPSI Auxerre ! 
+            Le tournoi a lieu le 22 avril 2023 au Pôle-Formation 58/89, 6 Route de Monéteau à Auxerre. 
+            Venez participer en équipe de 3 ou de 5 sur des jeux comme League of Legends, Rocket League ou encore Counter-Strike : Global Offensive,
+            et tenter de gagner des lots pour les finalistes !
+            La finale sera sur scène, dans l'amphithéatre du campus d'Auxerre, et retransmise sur Twitch sur la chaine de l'EPSI. 
+            Inscrivez-vous sur le formulaire ci-dessous, et rejoignez le serveur Discord pour toutes infos complémentaires !</p>
+          
+            <button class="discord-button w3-center" onclick="window.location.href = 'https://discord.gg/P6y9shZbSv';">Discord</button>
+          
+        </div>
+      
   <!-- The Rules Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="rules">
-    <h2 class="w3-wide">Règles</h2>
+    <h2 class="w3-wide  white">Règles</h2>
     <a href="https://drive.google.com/file/d/1yknQFxA0nK38zc7Vs6tdayT2DBKBa_fE/view?usp=share_link" download class="rules-button ">Règlement Counter Strike Global Offensive 2023</a><br/>
     <br/>
     <a href="https://drive.google.com/file/d/1v9NOl4-3ycHjAWxPj_MzY2B0yiA4Y7aO/view?usp=share_link" download class="rules-button">Règlement Rocket League 2023</a><br/>
@@ -90,7 +88,7 @@ body {font-family: "Roboto", sans-serif}
   </div>
 
   <!-- The Tour Section -->
-  <div class="purple-bg" id="jeux">
+  <div id="jeux">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center white">Les jeux</h2>
 
@@ -115,7 +113,7 @@ body {font-family: "Roboto", sans-serif}
   </div>
 
   <!-- Section contact forms -->
-  <div class="blue-bg" id="contact">
+  <div id="contact">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center white">Contact</h2>
       
@@ -143,7 +141,7 @@ body {font-family: "Roboto", sans-serif}
   </div>
   
   <!-- Section contact forms -->
-  <div class="purple-bg" id="inscription">
+  <div id="inscription">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center white">Inscription</h2>
       <iframe class="w3-center" src="https://docs.google.com/forms/d/e/1FAIpQLSd6IHyVfzhbAMO04Pn-k3Vsa2F94pB93td-TsCibdaMZZkKuw/viewform?embedded=true" width="640" height="1726" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
@@ -152,7 +150,7 @@ body {font-family: "Roboto", sans-serif}
   </div>
 
   <!-- PLAN Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="ylocation">
+  <div class="w3-container w3-content w3-padding-64  white" style="max-width:800px" id="ylocation">
     <h2 class="w3-wide w3-center">Comment y acceder ?</h2>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
@@ -169,11 +167,11 @@ body {font-family: "Roboto", sans-serif}
   </div>
   
 <!-- End Page Content -->
-</div>
+
 
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge">
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge  white">
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -217,6 +215,7 @@ window.onclick = function(event) {
   }
 }
 </script>
+
 
 </body>
 </html>
